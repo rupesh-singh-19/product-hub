@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/public/css/login.css">
+    <title></title>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <div class="login-header">
+            <span>Login</span>
+        </div>
+        <!-- Add name in page to login and sand in "Home Page" when verification is completed -->
+        <div class="input_box">
+            <label for="userName" class="label">*Enter your name:</label>
+            <input type="text" id="userName" class="input-field" autocomplete="off" required>
+            <i class="bx bx-user icon"></i>
+        </div>
+
+        <div class="input_box two">
+            <label for="captchaInput" class="label">*Enter your code:</label>
+
+            <!-- Display the captcha here -->
+            <div class="unselectable" id="captcha"></div>
+
+            <div class="captcha-form">
+                <!-- Input field for the user to enter the captcha -->
+                <input type="text" id="captchaInput" class="captchaInput" required>
+
+                <!-- Button for refresh capture -->
+                <button class="refresh" onclick="generateCaptcha()"><i class='bx bx-refresh'></i></button>
+            </div>
+        </div>
+        <button class="submit" onclick="verifyCaptcha()">Login</button>
+    </div>
+    
+    <div class="error-box">
+        <!-- Countdown display -->
+        <div id="countdown"></div>
+
+        <!-- Error message display -->
+        <div id="error-message-1"></div>
+        <div id="error-message-2"></div>
+    </div>
+
+    <script src="/public/login.js"></script>
+</body>
+
+</html>

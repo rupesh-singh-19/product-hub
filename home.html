@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/device.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <!-- -----------Header & NavBar start Here----------- -->
+    <header class="Header">
+        <div class="left">
+            <h1>Product-Hub</h1>
+        </div>
+        <div class="right">
+            <i class='bx bxs-user'></i>
+            <p id="welcomeMessage"></p>
+        </div>
+    </header>
+    <nav class="NavBar" id="NavBar">
+        <button class="toggle-btn"><i class='bx bx-menu'></i></button>
+        <ul>
+            <li><a data-target="home">Home <span></span></a></li>
+            <li><a data-target="product">Product <span></span></a></li>
+            <li><a data-target="blog">Blog <span></span></a></li>
+            <li><a data-target="about">About <span></span></a></li>
+            <li><a data-target="contact">Contact <span></span></a></li>
+        </ul>
+    </nav>
+    <!-- ------------Header & NavBar End Here------------ -->
+    <div class="space"></div>
+
+    <section class="container">
+
+        <aside class="sidebar" id="sidebar">
+
+            <ul>
+                <li><a href="">head</a></li>
+            </ul>
+        </aside>
+
+        <main class="content" id="content">
+            <!-- -----------Home Page Start Here-----------  -->
+            <section id="home" class="page">
+                <section class="featuredProduct">
+                    <h2>Featured Product</h2>
+                    <div id="featuredProducts"></div>
+
+                </section>
+                <section class="newArrivals">
+                    <h2>New Arrivals</h2>
+                    <div id="newArrivals"></div>
+
+                </section>
+                <section class="recommendation">
+                    <h2>Recommendation</h2>
+                    <div id="recommendations"></div>
+
+                </section>
+                <section class="subscribeNews">
+                    <h2>Subscribe to our NewsLetter</h2>
+                </section>
+            </section>
+            <!-- -----------Home Page End Here-----------  -->
+
+            <!-- -----------Product Page Start Here-----------  -->
+            <section id="product" class="page">
+                <h2>Product</h2>
+                <p>Check out our services.</p>
+            </section>
+            <!-- -----------Product Page End Here-----------  -->
+
+            <!-- -----------Blog Page Start Here-----------  -->
+            <section id="blog" class="page">
+                <h2>Blog</h2>
+                <p>Learn more about us here.</p>
+            </section>
+            <!-- -----------Blog Page End Here-----------  -->
+
+            <!-- -----------About Page Start Here-----------  -->
+            <section id="about" class="page">
+                <h2>About</h2>
+                <p>Learn more about us here.</p>
+            </section>
+            <!-- -----------About Page End Here-----------  -->
+
+            <!-- -----------Contact Page Start Here-----------  -->
+            <section id="contact" class="page">
+                <h2>Contact</h2>
+                <p>Contact us for inquiries.</p>
+            </section>
+            <!-- -----------Contact Page End Here-----------  -->
+        </main>
+
+    </section>
+
+
+
+    <script src="/public/app.js"></script>
+    <script src="/public/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+html,body {
+    background: url(/public/images/login-img/Login-background-img.jpg); min-width: 320px;
+    background-size: cover; background-repeat: no-repeat;
+    background-attachment: fixed; display: flex; position: relative;
+    align-items: center; justify-content: center; height: 100%; 
+    flex-direction: column; transition: all 1s ease; pointer-events: none;
+}
+
+.login-box {
+    position: relative; width: 400px; 
+    backdrop-filter: blur(20px); border: 3px solid #000000;
+    border-radius: 15px; padding: 7.5em 2.5em 4em 2.5em;
+    color: #000000; box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+    position: absolute; top: 0;
+    left: 50%; transform: translateX(-50%);
+    display: flex; align-items: center;
+    justify-content: center; background-color: #000000;
+    width: 140px; height: 70px; border-radius: 0 0 20px 20px;
+}
+
+.login-header span {
+    font-size: 30px; color: #ffffff;
+}
+
+.login-header::before {
+    content: ""; position: absolute;
+    top: 0; left: -30px; width: 30px;
+    height: 30px; border-top-right-radius: 50%;
+    background: transparent; box-shadow: 15px 0 0 0 #000000;
+}
+
+.login-header::after {
+    content: ""; position: absolute;
+    top: 0; right: -30px; width: 30px;
+    height: 30px; border-top-left-radius: 50%;
+    background: transparent; box-shadow: -15px 0 0 0 #000000;
+}
+
+.input_box {
+    position: relative; display: flex; pointer-events: all;
+    flex-direction: column; margin: 20px 0;
+}
+
+.input-field {
+    height: 40px; font-size: 16px; background: transparent;
+    color: #000000; font-size: 19px; font-weight: 600; 
+    padding-inline: 20px 50px; border: 2px solid #000000; outline: none;
+}
+
+#userName {
+    margin-bottom: 10px;
+}
+
+.label {
+    position: absolute; top: -10px; left: 20px; 
+    font-size: 16px; background-color: #000000;
+    border-radius: 30px; color: #ffffff; padding: 0 10px;
+}
+
+.icon {
+    position: absolute; top: 10px;
+    right: 15px; font-size: 20px;
+}
+
+.bx {
+    font-size: 24px; display: block;
+}
+
+#captcha {
+    color: #000000; font-weight: 800; font-size: 19px; text-align: center; 
+    height: 40px; line-height: 40px; letter-spacing: 14px;
+    border: 2px dashed #000000; font-family: "monospace";
+}
+
+.unselectable{
+    -webkit-user-select: none; -webkit-touch-callout: none;
+    -moz-user-select: none; -ms-user-select: none;  user-select: none;
+}
+
+.captcha-form {
+    display: flex; margin-top: 2px;
+}
+
+.captchaInput {
+    width: 100%; padding: 8px; font-size: 19px;
+    background: transparent; outline: none;
+    font-weight: 600; border: 2px solid #000000;
+    padding-inline: 20px 50px;
+}
+
+.refresh {
+    width: 15%; height: 45px; line-height: 40px; pointer-events: all;
+    outline: none; background: #000; color: #eee;
+    cursor: pointer; border: 1px solid #000;
+}
+
+.refresh:hover i{
+    transform: rotate(-180deg); transition: 1s all ease;
+}
+
+.submit {
+    width: 100%; height: 50px; background: #c4c1c1; pointer-events: all;
+    font-size: 16px; font-weight: 500; border: none;
+    border-radius: 30px; cursor: pointer; transition: 0.3s;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.submit:hover {
+    background: #ffffff;
+}
+
+.error-box{
+    position: relative; width: 400px; height: 15px; margin-top: 25px;
+    backdrop-filter: blur(20px); border: 3px solid #000000;
+    border-radius: 15px; padding: 1.5em 2.5em 1.5em 2.5em;
+    color: #000000; box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#error-message-1, #error-message-2 {
+    color: red;
+}
+
+#countdown {
+    color: rgb(7, 249, 7);
+}
+
+/* --------------------------------------------- */
+/* ---------------Device CSS Here--------------- */
+/* --------------------------------------------- */
+
+@media screen and (max-width: 769px) {
+    html, body{
+        background: url(/public/images/login-img/Phone_Tablet-Login-background-img.jpg);
+        background-size: cover; background-repeat: no-repeat;
+        background-attachment: fixed; background-position: center;
+    }
+    .login-box{
+        width: 330px; backdrop-filter: blur(15px);
+    }
+    .error-box{
+        width: 230px;
+    }
+}
+@media screen and (max-width: 431px) {
+    html, body{
+        background: url(/public/images/login-img/Phone_Tablet-Login-background-img.jpg);
+        background-size: cover; background-repeat: no-repeat;
+        background-attachment: fixed; background-position: 40%;
+    }
+    .login-box{
+        width: 16rem; backdrop-filter: blur(15px);
+        padding: 7.5em 1.5em 4em 1.5em;
+    }
+    .error-box{
+        width: 16rem;
+        padding: .5em 1.5em .5em 1.5em;
+    }
+}
